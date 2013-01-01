@@ -1,4 +1,4 @@
-MoreColors_Demo
+MoreColors Demo
 ===============
 
 Demo App UIColor+MoreColors - Jeff Lamarche's (ObjC Category)
