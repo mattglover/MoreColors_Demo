@@ -16,6 +16,9 @@
 		E20F9A1116926520008B2E71 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E20F9A1016926520008B2E71 /* Default.png */; };
 		E20F9A1316926520008B2E71 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E20F9A1216926520008B2E71 /* Default@2x.png */; };
 		E20F9A1516926520008B2E71 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E20F9A1416926520008B2E71 /* Default-568h@2x.png */; };
+		E20F9A2116926562008B2E71 /* UIColor+MoreColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F9A1F16926562008B2E71 /* UIColor+MoreColors.m */; };
+		E20F9A2216926562008B2E71 /* UIColor+MoreColors.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20F9A2016926562008B2E71 /* UIColor+MoreColors.txt */; };
+		E20F9A251692658D008B2E71 /* MoreColorsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F9A241692658D008B2E71 /* MoreColorsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		E20F9A1016926520008B2E71 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E20F9A1216926520008B2E71 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E20F9A1416926520008B2E71 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E20F9A1E16926562008B2E71 /* UIColor+MoreColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MoreColors.h"; sourceTree = "<group>"; };
+		E20F9A1F16926562008B2E71 /* UIColor+MoreColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MoreColors.m"; sourceTree = "<group>"; };
+		E20F9A2016926562008B2E71 /* UIColor+MoreColors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIColor+MoreColors.txt"; sourceTree = "<group>"; };
+		E20F9A231692658D008B2E71 /* MoreColorsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreColorsTableViewController.h; sourceTree = "<group>"; };
+		E20F9A241692658D008B2E71 /* MoreColorsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreColorsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +86,9 @@
 		E20F9A0416926520008B2E71 /* MoreColorsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E20F9A0D16926520008B2E71 /* AppDelegate.h */,
-				E20F9A0E16926520008B2E71 /* AppDelegate.m */,
+				E20F9A1C16926541008B2E71 /* Resources */,
+				E20F9A1D16926548008B2E71 /* Categories */,
+				E20F9A1B1692653D008B2E71 /* UI */,
 				E20F9A0516926520008B2E71 /* Supporting Files */,
 			);
 			path = MoreColorsDemo;
@@ -88,6 +97,8 @@
 		E20F9A0516926520008B2E71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E20F9A0D16926520008B2E71 /* AppDelegate.h */,
+				E20F9A0E16926520008B2E71 /* AppDelegate.m */,
 				E20F9A0616926520008B2E71 /* MoreColorsDemo-Info.plist */,
 				E20F9A0716926520008B2E71 /* InfoPlist.strings */,
 				E20F9A0A16926520008B2E71 /* main.m */,
@@ -97,6 +108,32 @@
 				E20F9A1416926520008B2E71 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E20F9A1B1692653D008B2E71 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E20F9A231692658D008B2E71 /* MoreColorsTableViewController.h */,
+				E20F9A241692658D008B2E71 /* MoreColorsTableViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E20F9A1C16926541008B2E71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E20F9A2016926562008B2E71 /* UIColor+MoreColors.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E20F9A1D16926548008B2E71 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E20F9A1E16926562008B2E71 /* UIColor+MoreColors.h */,
+				E20F9A1F16926562008B2E71 /* UIColor+MoreColors.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +191,7 @@
 				E20F9A1116926520008B2E71 /* Default.png in Resources */,
 				E20F9A1316926520008B2E71 /* Default@2x.png in Resources */,
 				E20F9A1516926520008B2E71 /* Default-568h@2x.png in Resources */,
+				E20F9A2216926562008B2E71 /* UIColor+MoreColors.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +204,8 @@
 			files = (
 				E20F9A0B16926520008B2E71 /* main.m in Sources */,
 				E20F9A0F16926520008B2E71 /* AppDelegate.m in Sources */,
+				E20F9A2116926562008B2E71 /* UIColor+MoreColors.m in Sources */,
+				E20F9A251692658D008B2E71 /* MoreColorsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +281,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoreColorsDemo/MoreColorsDemo-Prefix.pch";
 				INFOPLIST_FILE = "MoreColorsDemo/MoreColorsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -252,6 +293,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoreColorsDemo/MoreColorsDemo-Prefix.pch";
 				INFOPLIST_FILE = "MoreColorsDemo/MoreColorsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
