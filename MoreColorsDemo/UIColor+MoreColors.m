@@ -319,5 +319,4 @@
 + (id)yellowGreen                                       {vendColor(154, 205, 50);}
 + (id)zinnwaldite                                       {vendColor(235, 194, 175);}
 
-
 @end
